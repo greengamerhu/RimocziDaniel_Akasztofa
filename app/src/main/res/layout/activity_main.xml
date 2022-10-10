@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/fent"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:background="@drawable/buttonbackround"
+            android:id="@+id/buttonBal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:id="@+id/textviewBetuk"
+            android:paddingHorizontal="25dp"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:background="@drawable/buttonbackround"
+            android:backgroundTint="@color/black"
+            android:id="@+id/buttonJobb"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/fent"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tippelj"
+                android:id="@+id/buttonTipp"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/akasztofa00"
+            android:id="@+id/imageviewAkasztofa"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/textviewTipp"
+            android:text="___"
+            android:textSize="30dp"
+            android:letterSpacing="0.4"
+            android:paddingBottom="10dp"
+            />
+
+
+</RelativeLayout>
